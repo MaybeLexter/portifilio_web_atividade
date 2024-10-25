@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Meu Portfólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#curriculo">Currículo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Principal -->
+    <section id="banner" class="vh-100 d-flex justify-content-center align-items-center text-center bg-image">
+        <div class="text-white animate__animated animate__fadeInDown">
+            <h1 class="display-4">Olá, Eu sou Desenvolvedor Web</h1>
+            <p class="lead">Criação de websites modernos, responsivos e funcionais</p>
+            <a href="#projetos" class="btn btn-primary btn-lg">Veja Meus Projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção: Sobre Mim -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Sobre Mim</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p class="lead">Sou um desenvolvedor web com vasta experiência em criação de soluções interativas e personalizadas. Trabalho com HTML, CSS, JavaScript, React, e muito mais.</p>
+                    <p>Minhas principais habilidades incluem o desenvolvimento de sites responsivos, criação de aplicações web dinâmicas e implementação de soluções de front-end e back-end.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://www.fabionodariphoto.com/wp-content/uploads/2022/11/what-is-an-ai-generated-image-1024x683.jpg" alt="Minha Foto" class="img-fluid rounded-circle shadow-lg sobre-imagem">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Projetos -->
+    <section id="projetos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Projetos</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card shadow-lg animate__animated animate__fadeInLeft">
+                        <img src="bs_carrosel.png" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Desenvolvimento de um site utilizando recursos do "bootstrap".</p>
+                            <a href="https://bs-basico.vercel.app/" target="_blank" class="btn btn-outline-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg animate__animated animate__fadeInUp">
+                        <img src="landing_basica.png" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Landing Page Básica De Viagens</p>
+                            <a href="https://aula-jean-site-qualquer.vercel.app/" target="_blank" class="btn btn-outline-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg animate__animated animate__fadeInRight">
+                        <img src="js_simples.png" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Aplicação de JS Simples</p>
+                            <a href="https://js-basico-nu.vercel.app/" target="_blank" class="btn btn-outline-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Currículo -->
+    <section id="curriculo" class="py-5">
+        <div class="container text-center">
+            <h2>Currículo Online</h2>
+            <p>Confira minhas experiências profissionais e habilidades técnicas.</p>
+            <a href="https://github.com/MaybeLexter/portfolio_web/blob/df974464e049723b9ee1400ea315821d1c279fe0/cv.pdf" class="btn btn-outline-secondary btn-lg">Download do Currículo</a>
+
+        </div>
+    </section>
+
+    <!-- Seção: Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Entre em Contato</h2>
+            <form id="contact-form" class="mt-4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar Mensagem</button>
+                <p id="status" class="text-center mt-3"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <p>&copy; 2024 - Todos os direitos reservados | Desenvolvido por [Leonardi Vinicius]</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/leonardiviniciusti/" class="text-white mx-2">LinkedIn</a>
+            <a href="https://github.com/MaybeLexter" class="text-white mx-2">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
